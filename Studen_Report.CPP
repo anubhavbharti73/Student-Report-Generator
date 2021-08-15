@@ -593,5 +593,5 @@ int main()
 {
     report r;
     r.main_menu();
-    
+  return 0;  
 }
