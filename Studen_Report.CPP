@@ -37,12 +37,12 @@ class report
 	void modify_record();  //	Function to modify a record in a data file
 
 	void search_name();   //function to read student name and search the 					  Information in the given database file, if it is
-			  //	  available then display student information 					   otherwise display ì Name does not existî
+			  //	  available then display student information 					   otherwise display ‚Äú Name does not exist‚Äù
 
 	void search_admno(); // function to read student admno and search the 					  Information in the given database file, if it is
-					  // available then display student information 					   otherwise display ì Name does not existî
+					  // available then display student information 					   otherwise display ‚Äú Name does not exist‚Äù
 
-	void search_class();				  // available then display student information 					   otherwise display ì Name does not existî
+	void search_class();				  // available then display student information 					   otherwise display ‚Äú Name does not exist‚Äù
 	void single_report_card();
 	void report_single();  // function to show single student report card
 
@@ -89,7 +89,6 @@ void  report::main_menu()
 	 }  // end of switch
       }while(choice!=6);
 
-return ;
 }
 
 /*----------- function to create report menu -----------*/
@@ -124,7 +123,6 @@ void  report ::report_menu()
 	 }  // end of switch
       }while(choice!=4);
 
-return;
 }
 
 /*------------function to create search menu---------------*/
@@ -167,7 +165,6 @@ void  report ::search_menu()
 	 }  // end of switch
       }while(choice!=4);
 
-return;
 }
 
 
@@ -197,7 +194,6 @@ void report:: read_data( )
    cout<<"\n enter marks obtaine in emglish : ";
    cin>>eng;
 
-  return;
  }
 
 /*------------function to calculate total marks, per and grade-----------*/
@@ -222,7 +218,6 @@ void report::calculate()
 	     strcpy(grade,"C+");
  if(per<60)
 	     strcpy(grade,"C");
-  return;
 }
 
 /*---------function to display data members --------------*/
@@ -244,7 +239,6 @@ void  report::disp_data()
  cout<<"\n Grade               : "<<grade;
 
 
- return ;
 }
 
 /*-------------function to add record in data  file ------*/
@@ -286,7 +280,6 @@ void report::search_name( )
   if(flag==0)
     cout<<"\n No such name : "<<strupr(tname)<<" exist in our record... Try again";
 
-  return;
 }
 
 /*----------function to call search class wise -------------------------------*/
@@ -325,9 +318,6 @@ void report::search_class()
   if(flag==0)
       cout<<"\n\n information Not availabl for class :"<<tstd <<" - "<<tsect;
              
-  return;
-
-
 }
 
 /*------------function to search record according to student admno ------------*/
@@ -362,8 +352,6 @@ void report :: search_admno( )
   if(flag==0)
      cout<<"\n\n Admission No : "<<tadmno <<" does not exist.... Try again";
   
-  return;
-
 }
 
 
@@ -391,7 +379,6 @@ void report::single_report_card()
   cout<<"\n Total Marks :\t\t"<<total<<"\t\tPercentage : "<<per<<"\tGrade :"<<grade;
   cout<<"\n---------------------------------------------------------------------------------";    
 
-return;
 }
 
 
@@ -419,7 +406,6 @@ void report:: report_single()
   if(flag==0)
      cout<<"\n\n Admission No :"<<tadmno <<" does not exist.... Try again";      
   getch();
-return;
 }
 
 
@@ -475,7 +461,6 @@ void report:: report_class()
   cout<<"-------------------------------------------------------------------------------"<<endl;
   cout<<"\n Total Student : "<<no<<" Report prepared By  :"<<" Rakesh Kumar ";
   getch();   
-  return ;
   
  }
 
@@ -522,7 +507,6 @@ void report:: report_school()
   cout<<"-------------------------------------------------------------------------------"<<endl;
   cout<<"\n Total Student : "<<no<<" Report prepared By  :"<<" Rakesh Kumar ";
   getch();   
-  return ;
   
  }
 
@@ -561,7 +545,6 @@ void  report::del_record ()
   else
      cout<<"\n Admission No :"<<tadmno <<" does not exist...Try again";
   getch();        
- return;
 }     
 
 
@@ -600,7 +583,6 @@ void report:: modify_record( )
   else
      cout<<"\n Admission No :"<<tadmno <<" does not exist...Try again";
   getch();        
- return;    
      
 }
 
@@ -612,18 +594,4 @@ int main()
     report r;
     r.main_menu();
     
-    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
